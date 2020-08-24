@@ -24,6 +24,9 @@ pkg.link() {
     fs.link_file "${PKG_PATH}/xorg/xinitrc"
     fs.link_file "${PKG_PATH}/xorg/Xresources"
     fs.link_file "${PKG_PATH}/local/share/fonts" "${ELLIPSIS_HOME}/.local/share/fonts"
+    fs.link_file "${PKG_PATH}/local/share/fonts" "${ELLIPSIS_HOME}/.fonts"
+
+    fc-cache -fv
 }
 
 pkg.uninstall() {
