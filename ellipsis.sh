@@ -23,6 +23,7 @@ pkg.link() {
     fs.link_file "${PKG_PATH}/parcellite" "${config_home}/parcellite"
     fs.link_file "${PKG_PATH}/xorg/xinitrc"
     fs.link_file "${PKG_PATH}/xorg/Xresources"
+    fs.link_file "${PKG_PATH}/gtk-3.0" "${config_home}/gtk-3.0"
     fs.link_file "${PKG_PATH}/local/share/fonts" "${ELLIPSIS_HOME}/.local/share/fonts"
     fs.link_file "${PKG_PATH}/local/share/fonts" "${ELLIPSIS_HOME}/.fonts"
 
