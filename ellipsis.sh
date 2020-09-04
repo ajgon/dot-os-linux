@@ -26,6 +26,7 @@ pkg.link() {
     fs.link_file "${PKG_PATH}/gtk-3.0" "${config_home}/gtk-3.0"
     fs.link_file "${PKG_PATH}/local/share/fonts" "${ELLIPSIS_HOME}/.local/share/fonts"
     fs.link_file "${PKG_PATH}/local/share/fonts" "${ELLIPSIS_HOME}/.fonts"
+    fs.link_file "${PKG_PATH}/terminfo" "${ELLIPSIS_HOME}/.terminfo"
 
     fc-cache -fv
 }
